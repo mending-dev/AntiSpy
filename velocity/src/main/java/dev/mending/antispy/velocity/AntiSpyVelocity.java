@@ -26,7 +26,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
-@Plugin(id = "antispy", name = "AntiSpy", authors = {"MrMending"})
+@Plugin(id = "antispy", name = "AntiSpy", version = "1.0.0", authors = {"MrMending"})
 public class AntiSpyVelocity {
 
     private final Logger logger;
