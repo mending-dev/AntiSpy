@@ -1,0 +1,31 @@
+# Master switch for the whole feature
+enabled: true
+
+# Hide all namespaced commands (e.g. "antispy:antispy") from tab completion
+hide-namespaced: true
+
+# Also cancel the execution of listed commands (not only hide them)
+block-execution: true
+
+# Players with this permission see and can use everything
+bypass-permission: "antispy.bypass"
+
+# Message for blocked commands (MiniMessage, supports PlaceholderAPI placeholders like %player_name%)
+# "default" = the server's own unknown command message (spigot.yml: messages.unknown-command)
+# empty     = no message
+message: "default"
+
+# true = "message" also replaces the server's message for commands that do not exist at all,
+# so blocked and non-existing commands always look identical
+override-unknown-command: true
+
+# Command names without slash, case-insensitive. Aliases have to be listed too!
+commands:
+  - plugins
+  - pl
+  - version
+  - ver
+  - about
+  - help
+  - "?"
+  - icanhasbukkit

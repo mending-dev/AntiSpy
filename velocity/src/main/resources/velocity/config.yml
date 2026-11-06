@@ -1,0 +1,26 @@
+# Master switch for the whole feature
+enabled: true
+
+# Hide all namespaced commands (e.g. "plugin:command") from tab completion
+hide-namespaced: true
+
+# Also cancel the execution of listed commands (not only hide them)
+block-execution: true
+
+# true  = forward blocked commands to the backend server, so the server's own
+#         "unknown command" message is shown (only works if the backend does not know the command)
+# false = deny the command on the proxy and send the custom message below
+forward-to-backend: true
+
+# Players with this permission see and can use everything (needs a permission plugin like LuckPerms)
+bypass-permission: "antispy.bypass"
+
+# Custom message (MiniMessage, empty = no message), only used if forward-to-backend is false
+message: "<red>Unknown command."
+
+# Command names without slash, case-insensitive. Aliases have to be listed too!
+commands:
+  - velocity
+  - glist
+  - server
+  - send

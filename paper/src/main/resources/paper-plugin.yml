@@ -1,0 +1,12 @@
+name: AntiSpy
+version: '${version}'
+main: dev.mending.antispy.paper.AntiSpyPaper
+api-version: '26.3'
+description: Hides and blocks configurable commands
+
+dependencies:
+  server:
+    PlaceholderAPI:
+      load: BEFORE
+      required: false
+      join-classpath: true
